@@ -1,0 +1,87 @@
+body {
+  background-color: #ff5858;
+}
+
+.outer-container {
+  padding: 20px; 
+  background-color: #ffd7d7;
+}
+
+.inner-container {
+  border: 2px solid rgb(136, 128, 128); 
+  padding-bottom: 17px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.group {
+  display: flex;
+}
+
+.block {
+  width: 680px; 
+  height: 310px;
+  padding: 70px;
+  padding-left: 100px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border: 3px solid rgb(255, 123, 123);
+  background-color:rgb(236, 171, 171);
+}
+
+.block h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.block ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.block ul li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.block ul li:nth-child(even) {
+  color: red; 
+}
+
+.block h2 span {
+  font-size: 22px;
+  color: #333333;
+  padding-right: 15px;
+  position: relative;
+}
+
+.block ul li::before {
+  content: "\2022"; 
+  color: #333;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.block h2 span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
